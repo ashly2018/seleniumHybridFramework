@@ -11,7 +11,8 @@ public class A {
 
 	public static void getDriver()
 
-	{
+	{	
+	       //set up geckodriver.exe
 		System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/drivers/geckodriver");
 		driver = new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
